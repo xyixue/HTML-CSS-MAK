@@ -2,7 +2,7 @@
 
 ## 进度
 
-- [ x ] HTML-CSS-START
+- [x] HTML-CSS-START
 
 2. HTMLCSS-EXECTCISE
 3. HOMEWORK
