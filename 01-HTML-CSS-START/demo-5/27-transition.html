@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>transition 过渡</title>
+  <style>
+  .transition{
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+    /* transition: 2s ease; linear 匀速 
+    ease 缓慢  ease-in 开始慢  
+    ease-out 最后慢  ease-in-out 前后慢*/
+    
+    transition: width 2s ease-in 0.2s,height 2s ease-in 0.1s;;
+    /* transiton ： 完成动画的时间  速度  延迟几秒后开始动画 */
+  }
+  .transition:hover{
+    width: 800px;
+    height: 400px;
+    background-color: palegoldenrod;
+  }
+  </style>
+</head>
+<body>
+  <h1>transition 过渡</h1>
+  <div class="transition">
+
+  </div>
+</body>
+</html>

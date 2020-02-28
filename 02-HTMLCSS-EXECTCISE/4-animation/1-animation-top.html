@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation Top</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* ▲———————————————— animte-top style  ————————————————▲ */
+      .animte-top {
+        position: relative;
+        animation: animatetop 0.6s;
+      }
+      @keyframes animatetop {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      /* ▲———————————————— bottom style  ————————————————▲ */
+      .animte-bottom {
+        position: relative;
+        animation: animatebottom 0.6s;
+      }
+      @keyframes animatebottom {
+        from {
+          bottom: -300px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+      /* ▲———————————————— left style  ————————————————▲ */
+      .animte-left {
+        position: relative;
+        animation: animateleft 0.6s;
+      }
+      @keyframes animateleft {
+        from {
+          left: -300px;
+          opacity: 0;
+        }
+        to {
+          left: 0;
+          opacity: 1;
+        }
+      }
+      /* ▲———————————————— right style  ————————————————▲ */
+      .animte-right {
+        position: relative;
+        animation: animateright 0.6s;
+      }
+      @keyframes animateright {
+        from {
+          right: -300px;
+          opacity: 0;
+        }
+        to {
+          right: 0;
+          opacity: 1;
+        }
+      }
+      .animte-opacity {
+        position: relative;
+        animation: animateopacity 4s;
+      }
+      @keyframes animateopacity {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .animte-fadding {
+        position: relative;
+        animation: animatefadding 5s infinite;
+      }
+      @keyframes animatefadding {
+        0% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        70% {
+          opacity: 0.5;
+        }
+        80% {
+          opacity: 0;
+        }
+      }
+      .spinner {
+        font-size: 32px;
+        position: relative;
+        animation: animatespinner 2s infinite linear;
+      }
+      
+      @keyframes animatespinner {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+      .animate-zoom {
+        font-size: 32px;
+        position: relative;
+        animation: animatezoom 2s infinite linear;
+      }
+      
+      @keyframes animatezoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="animte-top">animte-top</h1>
+    <h1 class="animte-bottom">animte-bottom</h1>
+    <h1 class="animte-left">animte-left</h1>
+    <h1 class="animte-right">animte-right</h1>
+    <br />
+    <img
+      class="animte-opacity"
+      src="https://unsplash.it/200/200?image=1047"
+      width="200"
+      height="200"
+      alt=""
+    />
+    <img
+      class="animte-fadding"
+      src="https://unsplash.it/200/200?image=994"
+      width="200"
+      height="200"
+      alt=""
+    />
+    <h1>Animation spin</h1>
+    <span><i class="fa fa-spinner spinner"></i></span>
+    <h1>Animation zoom</h1>
+    <img
+    class="animate-zoom"
+    src="https://unsplash.it/200/200?image=1024"
+    width="200"
+    height="200"
+    alt=""
+  />
+  </body>
+</html>

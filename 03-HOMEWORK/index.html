@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>React Store</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link href="https://fonts.font.im/css?family=Nunito" rel="stylesheet" />
+    <link
+      href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./flex.css" />
+    <link
+      href="https://cdn.bootcss.com/bulma/0.7.5/css/bulma.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-bar">
+        <div class="left-nav">
+          <a href="">HOME</a>
+        </div>
+        <div class="right-nav">
+          <a href="">LOGIN</a>
+          <a href="">REGISTER</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="search">
+        <div class="logo">STORE</div>
+        <div class="search-box hide-small">
+          <div class="field has-addons">
+            <p class="control">
+              <input class="input" type="text" placeholder="search Products" />
+            </p>
+            <p class="control">
+              <a class="button is-static">
+                X
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="shop-cart">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-num">(0)</span>
+        </div>
+      </div>
+      <div class="products">
+        <div class="row">
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/1.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class=" col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/2.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/3.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/4.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/5.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/6.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/7.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/8.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/9.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/10.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/11.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="product">
+              <div class="p-content">
+                <div class="img-wrapper">
+                  <figure class="image is-4by3">
+                    <img src="./images/12.jpg" alt="xiezi" />
+                  </figure>
+                </div>
+                <p class="p-tags">25 Colors</p>
+                <p class="p-name">Nike Paul George PG 3</p>
+              </div>
+              <div class="p-footer">
+                <p class="price">￥ 538.00</p>
+                <button class="add-cart">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

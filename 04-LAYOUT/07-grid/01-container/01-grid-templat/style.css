@@ -1,0 +1,81 @@
+span {
+  font-size: 2em;
+}
+
+#container {
+  display: grid;
+  /* ▲———————————————— grid style  ————————————————▲ */
+  /* grid-template-columns属性定义每一列的列宽 */
+  /* grid-template-rows属性定义每一行的行高。 */
+  /* grid-template-columns: 50px 50px 50px;
+   grid-template-rows: 50px 50px 50px;  */
+
+  /* grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 33.33% 33.33% 33.33%; */
+  /* 可以用百分比 */
+
+  /* grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%); */
+  /* repeat()接受两个参数，第一个参数是重复的次数（上例是3），第二个参数是所要重复的值 */
+
+  /* grid-template-columns: repeat(2, 100px 20px 80px); */
+
+  /* grid-template-columns: repeat(auto-fill, 100px);  */
+  /* 自己填充 可以自适应 */
+
+  /* grid-template-columns: 1fr 2fr; */
+  /* 网格布局提供了fr关键字（fraction 的缩写，意为"片段"）。
+  如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。 */
+
+  /* grid-template-columns: 1fr 1fr minmax(500px, 1fr);
+  minmax()函数产生一个长度范围，表示长度就在这个范围之中。
+  它接受两个参数，分别为最小值和最大值。 */
+  /* minmax(100px, 1fr)表示列宽不小于500px，不大于1fr。 */
+
+  /* grid-template-columns: 100px auto 100px;
+  auto关键字表示由浏览器自己决定长度。 */
+  grid-template-columns: 70% 30%;
+
+}
+
+.item {
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid #e5e4e9;
+}
+
+.item-1 {
+  background-color: #ef342a;
+}
+
+.item-2 {
+  background-color: #f68f26;
+}
+
+.item-3 {
+  background-color: #4ba946;
+}
+
+.item-4 {
+  background-color: #0376c2;
+}
+
+.item-5 {
+  background-color: #c077af;
+}
+
+.item-6 {
+  background-color: #f8d29d;
+}
+
+.item-7 {
+  background-color: #b5a87f;
+}
+
+.item-8 {
+  background-color: #d0e4a9;
+}
+
+.item-9 {
+  background-color: #4dc7ec;
+}

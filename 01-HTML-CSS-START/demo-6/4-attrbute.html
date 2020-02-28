@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>属性选择器</title>
+  <style>
+  /* 1.直接选择有属性名的 */
+  p[title]{
+    background-color: lightgreen;
+  }
+  /* 2. 选择属性加对应属性值 */
+  p[title="topp1"]{
+    background-color: lightseagreen;
+  }
+
+  </style>
+</head>
+ 
+<body>
+  <h1>元素右attribute属性</h1>
+  <p title="topp1">Lorem ipsum dolor sit.</p>
+  <p title="topp2">Lorem ipsum dolor sit.</p>
+  <p title="topp3">Lorem ipsum dolor sit.</p>
+  <p>Lorem ipsum dolor sit.</p>
+  <p class="my-test">Lorem ipsum dolor sit amet.</p>
+  <p class="mytest">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

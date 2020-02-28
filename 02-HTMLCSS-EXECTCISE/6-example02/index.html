@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.font.im/css?family=Lato" rel="stylesheet" />
+
+    <title>LOGO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ▲———————————————— 导航 ————————————————▲ -->
+    <nav class="nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#service">服务</a></li>
+        <li><a href="#price">价格</a></li>
+        <li><a href="#about">我们</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+    <!-- ▲———————————————— 中间内容 START ————————————————▲ -->
+    <main class="content">
+      <!-- ▲———————————————— logo ————————————————▲ -->
+      <header class="logo">
+        <h1>LOGO</h1>
+      </header>
+      <!-- ▲———————————————— slider ————————————————▲ -->
+      <div class="slider-box">
+        <div class="slider">
+          <img src="./images/one.jpg" alt="" />
+          <div class="left-top">
+            <div class="tag animate-bottom">最优方案</div>
+          </div>
+        </div>
+        <div class="slider" style="display: none;">
+          <img src="./images/tow.jpg" alt="" />
+          <div class="middle">
+            <div class="tag animate-bottom">合理价钱</div>
+          </div>
+        </div>
+        <div class="slider" style="display: none;">
+          <img src="./images/three.jpg" alt="" />
+          <div class="right-top">
+            <div class="tag animate-bottom">最优服务</div>
+          </div>
+        </div>
+        <div class="tool-bar">
+          <div class="row">
+            <div class="col l1">
+              <span class="page-btn"
+              onclick="gopage(-1)"
+                ><i class="fa fa-chevron-circle-left"></i
+              ></span>
+            </div>
+            <div class="col l10">
+              <div class="center-align">
+                <span class="dots active" onclick="go(1)"></span>
+                <span class="dots" onclick="go(2)"></span>
+                <span class="dots" onclick="go(3)"></span>
+              </div>
+            </div>
+            <div class="col l1">
+              <div class="right-align">
+                <span class="page-btn"
+                onclick="gopage(1)"
+                  ><i class="fa fa-chevron-circle-right"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ▲———————————————— service ————————————————▲ -->
+      <div id="service" class="service">
+        <div class="center-align">
+          <h2 class="bottom-bar">提供什么服务</h2>
+        </div>
+        <div class="row">
+          <div class="col l3 m6 s12">
+            <div class="box-1">
+              <h3>设计</h3>
+              <p>
+                服务设计是有效的计划和组织一项服务中所涉及的各类因素人、基础设施、通信交流以及物料等，从而提高用户体验和服务质量的设计活动。
+              </p>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="box-2">
+              <h3>品牌</h3>
+              <p>
+                服务设计是有效的计划和组织一项服务中所涉及的各类因素人、基础设施、通信交流以及物料等，从而提高用户体验和服务质量的设计活动。
+              </p>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="box-3">
+              <h3>方案</h3>
+              <p>
+                服务设计是有效的计划和组织一项服务中所涉及的各类因素人、基础设施、通信交流以及物料等，从而提高用户体验和服务质量的设计活动。
+              </p>
+            </div>
+          </div>
+          <div class="col l3 m6 s12">
+            <div class="box-4">
+              <h3>承诺</h3>
+              <p>
+                服务设计是有效的计划和组织一项服务中所涉及的各类因素人、基础设施、通信交流以及物料等，从而提高用户体验和服务质量的设计活动。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ▲———————————————— prie ————————————————▲ -->
+      <div class="price" id="price">
+        <div class="center-align">
+          <h2 class="bottom-bar">定价方案</h2>
+        </div>
+        <div class="row">
+          <div class="col l4 s12">
+            <div class="card-box">
+              <ul class="card-list">
+                <li class="header"><h3>基础</h3></li>
+                <li>存储 <b>10GB</b></li>
+                <li>邮件 <b>10</b></li>
+                <li>域名 <b>10</b></li>
+                <li>在线支持</li>
+                <li>
+                  <h2>￥ 66</h2>
+                  <p>每月</p>
+                </li>
+                <li class="footer"><button class="button">购买</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="card-box">
+              <ul class="card-list">
+                <li class="header"><h3>专业</h3></li>
+                <li>存储 <b>10GB</b></li>
+                <li>邮件 <b>10</b></li>
+                <li>域名 <b>10</b></li>
+                <li>在线支持</li>
+                <li>
+                  <h2>￥ 166</h2>
+                  <p>每月</p>
+                </li>
+                <li class="footer"><button class="button">购买</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="card-box">
+              <ul class="card-list">
+                <li class="header"><h3>高级</h3></li>
+                <li>存储 <b>10GB</b></li>
+                <li>邮件 <b>10</b></li>
+                <li>域名 <b>10</b></li>
+                <li>在线支持</li>
+                <li>
+                  <h2>￥ 266</h2>
+                  <p>每月</p>
+                </li>
+                <li class="footer"><button class="button">购买</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ▲———————————————— about ————————————————▲ -->
+      <div class="about" id="about">
+        <div class="center-align">
+          <h2 class="bottom-bar">关于我们</h2>
+        </div>
+        <div class="row">
+          <div class="col l4 s12">
+            <div class="card-box">
+              <div class="card ">
+                <img
+                  src="./images/we1.jpg"
+                  width="450"
+                  height="250"
+                  alt="关于我们"
+                />
+                <div class="card-content">
+                  <h2>简·多亦</h2>
+                  <p>CEO & 创办人</p>
+                  <p>
+                    服务设计是以为客户设计策划一系列易用、满意、信赖、有效地服务为目标,从而广泛的运用于各项服务业,服务设计既可以是有形的,也可以是无形的
+                  </p>
+                  <button class="button">联系</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col l4 s12">
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/we2.jpg"
+                  width="450"
+                  height="250"
+                  alt="关于我们"
+                />
+                <div class="card-content">
+                  <h2>简·多亦</h2>
+                  <p>CEO & 创办人</p>
+                  <p>
+                    服务设计是以为客户设计策划一系列易用、满意、信赖、有效地服务为目标,从而广泛的运用于各项服务业,服务设计既可以是有形的,也可以是无形的
+                  </p>
+                  <button class="button">联系</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="card-box">
+              <div class="card">
+                <img
+                  src="./images/we3.jpg"
+                  width="450"
+                  height="250"
+                  alt="关于我们"
+                />
+                <div class="card-content">
+                  <h2>简·多亦</h2>
+                  <p>CEO & 创办人</p>
+                  <p>
+                    服务设计是以为客户设计策划一系列易用、满意、信赖、有效地服务为目标,从而广泛的运用于各项服务业,服务设计既可以是有形的,也可以是无形的
+                  </p>
+                  <button class="button">联系</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ▲———————————————— contact ————————————————▲ -->
+      <div class="contact" id="contact">
+        <div class="center-align">
+          <h2 class="bottom-bar">联系我们</h2>
+        </div>
+        <form action="#" method="POST">
+          <label for="name">姓名</label>
+          <input type="text" id="name" />
+          <label for="email">邮箱</label>
+          <input type="text" id="email" />
+          <label for="content">内容</label>
+          <input type="text" id="content" />
+          <button class="button">提交</button>
+        </form>
+      </div>
+    </main>
+    <!-- ▲———————————————— 底部 ————————————————▲ -->
+    <footer class="footer">
+      <p class="icon-bar">
+        <a href=""><i class="fa fa-weixin"></i></a>
+        <a href=""><i class="fa fa-qq"></i></a>
+        <a href=""><i class="fa fa-weibo"></i></a>
+        <a href=""><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-github"></i></a>
+      </p>
+      <p>powered by <a href="#">yixue.me</a></p>
+    </footer>
+
+    <!-- ▲———————————————— js ————————————————▲ --> 
+    <script src="./js/project.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>animation 动画</title>
+  <style>
+  .aniation{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    
+    position: relative;
+    left: 0;
+    top: 0;
+    animation: example 3s 1s linear 5 alternate;
+    /* name duration timing-function delay iteration-count( infinite 无限执行) direction fill-mode; */
+  }
+  @keyframes example {
+    /* from{background-color:peachpuff; left: 0;top: 0;}
+    to{background-color: powderblue;left: 80%;top: 0;} */
+    0%{background-color:peachpuff; left: 0;top: 0;}
+    25%{background-color: powderblue;left: 80%;top: 0;}
+    50%{background-color: powderblue;left: 80%;top: 300px;}
+    75%{background-color: powderblue;left: 0;top: 300px;}
+    100%{background-color: powderblue;left: 0;top: 0;}
+  }
+  </style>
+
+</head>
+<body>
+  <h1>animation动画</h1>
+  <div class="aniation">
+
+  </div>
+</body>
+</html>

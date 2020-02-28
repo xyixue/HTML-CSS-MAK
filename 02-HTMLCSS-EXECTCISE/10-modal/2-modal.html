@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>modal2</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      .close-modal-animate {
+        animation: closeanimate 0.5s;
+      }
+      @keyframes closeanimate {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(0);
+        }
+      }
+
+      @keyframes animatezoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+      .container {
+        padding: 8px 16px;
+      }
+      .button {
+        border: none;
+        background-color: #444;
+        color: #fff;
+        font-size: 14px;
+        padding: 8px 16px;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+      }
+      .button:hover {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .modal {
+        background-color: rgba(0, 0, 0, 0.3);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        display: none;
+      }
+      .modal-dialog {
+        margin: 32px 0px;
+      }
+      .modal-content {
+        background-color: #fff;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 16px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2),
+          0px 5px 10px rgba(0, 0, 0, 0.16);
+        animation: animatezoom 0.5s;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .header::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .modal-title {
+        font-weight: 600;
+        font-size: 20px;
+        display: inline;
+      }
+      .close-btn {
+        float: right;
+        border: none;
+        background-color: transparent;
+        color: #000;
+        font-size: 24px;
+        font-weight: 300;
+        cursor: pointer;
+        padding: 0;
+      }
+      .close-btn:hover {
+        color: #e88e8e;
+      }
+      .inner {
+        font-size: 14px;
+      }
+      .footer {
+        text-align: right;
+      }
+      .close-button,
+      .ok-button {
+        color: #e88e8e;
+        border: none;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="button" onclick="openModal()">Open Modal</button>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-dialog">
+        <div id="modalContent" class="modal-content">
+          <div class="header">
+            <h2 class="modal-title">Modal Title</h2>
+            <button class="close-btn" onclick="closeModal()">x</button>
+          </div>
+          <div class="inner">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              omnis quibusdam consectetur eaque in quis unde, sint enim dolorum
+              corrupti dicta obcaecati voluptatibus perspiciatis impedit?
+              Quisquam magni laborum beatae corrupti rem minus recusandae rerum
+              possimus at. Sapiente deserunt possimus autem nihil, quia, harum
+              tempore perferendis optio aperiam esse fugit iusto.
+            </p>
+            <img src="./1067.jpg" alt="lou" width="900" height="500" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              omnis quibusdam consectetur eaque in quis unde, sint enim dolorum
+              corrupti dicta obcaecati voluptatibus perspiciatis impedit?
+              Quisquam magni laborum beatae corrupti rem minus recusandae rerum
+              possimus at. Sapiente deserunt possimus autem nihil, quia, harum
+              tempore perferendis optio aperiam esse fugit iusto.
+            </p>
+          </div>
+          <div class="footer">
+            <button class="close-button" onclick="closeModal()">CLOSE</button>
+            <button class="ok-button">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openModal() {
+        var modalNode = document.getElementById("modal");
+        modalNode.style.display = "block";
+        modalNode.className = modalNode.className.replace(
+          "close-modal-animate",
+          ""
+        );
+      }
+      function closeModal() {
+        var modalNode = document.getElementById("modal");
+        modalNode.className = modalNode.className + " close-modal-animate";
+        setTimeout(function() {
+          modalNode.style.display = "none";
+        }, 400);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>align-content</title>
+  <style>
+  div{
+    display: flex;
+    background-color: blueviolet;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* 换行后 子元素的排列方式要用 align-content */
+    align-content: center;
+    /* align-content: stretch; 子元素取消设置高度 */
+  }
+  div span{
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    color: white;
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span> 
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>  
+  </div>
+</body>
+</html>

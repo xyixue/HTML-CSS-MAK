@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex 容器的属性</title>
+    <style>
+      /* ▲———————————————— flex-direction设置主轴的方向 style  ————————————————▲ */  
+      /* flex-direction设置主轴的方向 */
+      /* 主轴 水平向右   侧轴 垂直向下 */
+
+      /* row->默认从左到右
+        row-reverse 从右到左
+        column 从上到下
+        column-reverse  从下到上 */
+
+      div {
+        width: 800px;
+        height: 300px;
+        background-color: pink;
+        display: flex;
+        /* 默认的主轴的x轴，y轴就是侧轴
+        我们的元素是跟着主轴来排列的 */
+        /* flex-direction: row-reverse; */
+        /* 我们把主轴设置为y轴，x轴就是侧轴 */
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+        justify-content: space-around;
+      }
+      /* ▲———————————————— flex-direction设置主轴的方向 style  ————————————————▲ */  
+      div span {
+        width: 150px;
+        height: 100px;
+        background-color: purple;
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>后代选择器</title>
+    <style>
+      /* 后代选择器 */
+      div p {
+        background-color: antiquewhite;
+      }
+      /* 子代选择器 */
+      /* 只选择儿子 不包括孙子 重孙之类的 */
+      div > p {
+        background-color: brown;
+      }
+      /* 相邻兄弟选择器 */
+      /* 同级别的弟弟 上面的选不到 直接相邻 */
+      div + p {
+        background-color: yellow;
+      }
+      /* 一般兄弟选择器 */
+      /* 同级别的所有弟弟  上面的选不到 */
+      div ~ p {
+        background-color:chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <p>测试相邻选择器</p>
+    <div>
+      <p>段落内容one</p>
+      <p>段落内容two</p>
+      <span>
+        <p>段落内容三</p>
+      </span>
+    </div>
+    <p>段落内容four</p>
+    <p>段落内容five</p>
+  </body>
+</html>

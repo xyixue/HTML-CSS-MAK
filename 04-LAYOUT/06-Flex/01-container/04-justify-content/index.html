@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>justify-content</title>
+    <style>
+      div {
+        display: flex;
+        width: 800px;
+        height: 600px;
+        background-color: pink;
+        flex-direction: column;
+        /* justify-content    设置主轴 */
+        /* justify-content: flex-start; 默认 */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* 平分剩余空间 */
+        /* justify-content: space-around; */
+        /* 先贴近两边在平分剩余空间 */
+        justify-content: space-between;
+      }
+      div span {
+        width: 150px;
+        height: 100px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+    </div>
+  </body>
+</html>

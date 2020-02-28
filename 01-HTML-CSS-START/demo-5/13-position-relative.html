@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>position-relative设置元素的位置</title>
+    <style>
+      .relative {
+        border:lightgreen 2px solid;
+        /* relative设置元素从static位置移动 上右下左 */
+        /* relative设置元素 他原来位置并不会被其他元素填充 */
+        position: relative; 
+        top: -20px;
+        right: -50px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>position-relative设置元素的位置</h1>
+    <div class="relative">
+      div元素的position ：relative
+    </div>
+  </body>
+</html>

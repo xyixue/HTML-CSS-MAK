@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>表格</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption>
+        简单的表格
+      </caption>
+      <tr>
+        <th>
+          名称
+        </th>
+        <th>
+          含义
+        </th>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>超文本编辑语言</td>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>超文本编辑语言</td>
+      </tr>
+      <tr>
+        <td>html</td>
+        <td>超文本编辑语言</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <table border="1"> 
+      <caption>有结构的表格</caption>
+      <thead>
+        <tr>
+          <th>
+            名称
+          </th>
+          <th>
+            含义
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>html</td>
+          <td>超文本编辑语言</td>
+        </tr>
+        <tr>
+          <td>html</td>
+          <td>超文本编辑语言</td>
+        </tr>
+        <tr>
+          <td>html</td>
+          <td>超文本编辑语言</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>css</td>
+          <td>层叠样式表</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br>
+    <br>
+
+    <table border="1">
+      <caption>合并单元格</caption>
+      <tr>
+        <th>单元格a</th>
+        <th>单元格b</th>
+        <th>单元格c</th>
+      </tr>
+      <tr>
+        <td colspan="2">1</td>
+        <!-- <td>2</td> -->
+        <td>3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <!-- <td>1</td> -->
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+  </body>
+</html>

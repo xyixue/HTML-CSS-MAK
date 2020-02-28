@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link
+      href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ▲———————————————— nav ————————————————▲ -->
+    <nav class="top">
+      <ul class="nav black nav-h">
+        <li>
+          <a href="#" class="text-lightgray large hover-lightgray"
+            ><i class="fa fa-home margin-right"></i>Logo</a
+          >
+        </li>
+        <li class="hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray"
+            ><i class="fa fa-firefox"></i
+          ></a>
+        </li>
+        <li class="hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray"
+            ><i class="fa fa-envelope"></i
+          ></a>
+        </li>
+        <li class="hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray"
+            ><i class="fa fa-user"></i
+          ></a>
+        </li>
+        <li class="dropdown hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray"
+            ><i class="fa fa-bell"></i>
+            <sup class="sup red">3</sup>
+          </a>
+          <div class="dropdown-content">
+            <a href="#">3个好友请求</a>
+            <a href="#">有人赞了你的文章</a>
+            <a href="#">有新的留言</a>
+          </div>
+        </li>
+        <li class="right hide-small">
+          <a href="#" class="text-lightgray large hover-lightgray">
+            <img
+              src="./images/user.jpg"
+              class="circle"
+              width="25"
+              height="25"
+              alt="author"
+            />
+          </a>
+        </li>
+        <li class="right hide-large hide-medium">
+          <a href="#" data-toggle="menu" class="text-lightgray large hover-black">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+      <ul data-target="menu" class="nav hide-medium hide-large black mobile">
+        <li><a href="#" class="text-lightgray  hover-lightgray">Link 01</a></li>
+        <li><a href="#" class="text-lightgray  hover-lightgray">Link 02</a></li>
+        <li><a href="#" class="text-lightgray  hover-lightgray">Link 03</a></li>
+        <li><a href="#" class="text-lightgray  hover-lightgray">Link 04</a></li>
+      </ul>
+    </nav>
+    <!-- ▲———————————————— main content ————————————————▲ -->
+    <main class="margin-top-64 padding-tb ">
+      <div class="row-padding">
+        <div class="col l3 s12">
+          <div class="shadow container padding-tb round-small margin-bottom-24">
+            <p class="center">我的主页</p>
+            <div class="center">
+              <img
+                src="./images/left.jpg"
+                width="110"
+                height="110"
+                class="circle"
+                alt="author"
+              />
+            </div>
+            <hr />
+            <ul class="list">
+              <li>
+                <i class="fa fa-pencil text-red margin-right"></i>Designer, UI
+              </li>
+              <li>
+                <i class="fa fa-calendar text-red margin-right"></i>London, UK
+              </li>
+              <li>
+                <i class="fa fa-birthday-cake text-red margin-right"></i>April
+                1, 1988
+              </li>
+            </ul>
+          </div>
+          <div
+            class="lightred shadow container padding-tb round-small margin-bottom-24"
+          >
+            <ul class="list">
+              <li class="hover-red">
+                <i class="fa fa-pencil  margin-right"></i>Designer, UI
+              </li>
+              <li class="hover-red">
+                <i class="fa fa-calendar  margin-right"></i>London, UK
+              </li>
+              <li class="hover-red">
+                <i class="fa fa-birthday-cake  margin-right"></i>April 1, 1988
+              </li>
+            </ul>
+          </div>
+          <div class="shadow container padding-tb round-small margin-bottom-24">
+            <span class="tag lightred">最新</span>
+            <span class="tag lightgrey">Yixue</span>
+            <span class="tag lightblue">标签</span>
+            <span class="tag lightgrey">游戏</span>
+            <span class="tag lightgrey">文章</span>
+            <span class="tag lightblue">艺术</span>
+            <span class="tag lightblue">音乐</span>
+            <span class="tag lightgrey">旅行</span>
+            <span class="tag lightred">成长</span>
+            <span class="tag lightblue">音乐</span>
+            <span class="tag lightgrey">旅行</span>
+            <span class="tag lightred">成长</span>
+            <span class="tag lightblue">音乐</span>
+            <span class="tag lightgrey">旅行</span>
+            <span class="tag lightred">成长</span>
+          </div>
+          <div
+            class="shadow relative-contaner lightyellow container padding-tb round-small margin-bottom-24"
+          >
+            <button
+              class="btn top-right"
+              onclick="this.parentNode.style.display = 'none';"
+            >
+              ×
+            </button>
+            <h4>Hey！</h4>
+            <p class="small">有人正在浏览您的主页，看看 TA 是谁</p>
+          </div>
+        </div>
+        <div class="col l7 s12">
+          <div class="shadow container padding-tb round margin-bottom-24">
+            <form>
+              <div class="form-group-label">
+                <label for="name" class="floating-label">发布你的状态：</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  value=""
+                />
+              </div>
+              <div class="right-align">
+                <button type="submit" class="button lightred">
+                  <i class="fa fa-pencil margin-right-8"></i>发送
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="shadow  padding-tb margin-bottom-24 round">
+            <div class="container">
+              <img
+                src="./images/left.jpg"
+                width="60"
+                height="60"
+                class="circle left margin-right"
+                alt="author"
+              />
+              <span class="right text-grey">1 min</span>
+              <h3>Jon Deno</h3>
+              <br />
+              <hr class="clear" />
+              <p>
+                从自身方面来看，对阿里而言，作为直接接触消费者的最后一环，本地生活的业务数据本就是阿里实现智能数据的关键一环，其重要性不言而喻。同时，阿里极力打造本地生活领域也可以用来阻止美团的业务延伸，从而分散其向阿里核心电商业务店的精力，这也是其加固自身生态护城河的关键步骤。
+              </p>
+            </div>
+            <div class="row-padding">
+              <div class="col l6 s12 margin-bottom">
+                <img
+                  src="./images/826.jpg"
+                  width="300"
+                  height="200"
+                  class="img"
+                  alt=""
+                />
+              </div>
+              <div class="col l6 s12 margin-bottom">
+                <img
+                  src="./images/791.jpg"
+                  width="300"
+                  height="200"
+                  class="img"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="container">
+              <button class="button red">
+                <i class="fa fa-thumbs-up margin-right-8"></i>喜欢
+              </button>
+              <button class="button ">
+                <i class="fa fa-comment margin-right-8"></i>留言
+              </button>
+            </div>
+          </div>
+          <div class="shadow  padding-tb margin-bottom-24 round">
+            <div class="container">
+              <img
+                src="./images/left.jpg"
+                width="60"
+                height="60"
+                class="circle left margin-right"
+                alt="author"
+              />
+              <span class="right text-grey">1 min</span>
+              <h3>Jon Deno</h3>
+              <br />
+              <hr class="clear" />
+              <p>
+                从自身方面来看，对阿里而言，作为直接接触消费者的最后一环，本地生活的业务数据本就是阿里实现智能数据的关键一环，其重要性不言而喻。同时，阿里极力打造本地生活领域也可以用来阻止美团的业务延伸，从而分散其向阿里核心电商业务店的精力，这也是其加固自身生态护城河的关键步骤。
+              </p>
+            </div>
+            <div class="row-padding">
+              <div class="col l6 s12 margin-bottom">
+                <img
+                  src="./images/826.jpg"
+                  width="300"
+                  height="200"
+                  class="img"
+                  alt=""
+                />
+              </div>
+              <div class="col l6 s12 margin-bottom">
+                <img
+                  src="./images/791.jpg"
+                  width="300"
+                  height="200"
+                  class="img"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="container">
+              <button class="button red">
+                <i class="fa fa-thumbs-up margin-right-8"></i>喜欢
+              </button>
+              <button class="button ">
+                <i class="fa fa-comment margin-right-8"></i>留言
+              </button>
+            </div>
+          </div>
+          <div class="shadow  padding-tb margin-bottom-24 round">
+            <div class="container">
+              <img
+                src="./images/left.jpg"
+                width="60"
+                height="60"
+                class="circle left margin-right"
+                alt="author"
+              />
+              <span class="right text-grey">1 min</span>
+              <h3>Jon Deno</h3>
+              <br />
+              <hr class="clear" />
+              <p>
+                从自身方面来看，对阿里而言，作为直接接触消费者的最后一环，本地生活的业务数据本就是阿里实现智能数据的关键一环，其重要性不言而喻。同时，阿里极力打造本地生活领域也可以用来阻止美团的业务延伸，从而分散其向阿里核心电商业务店的精力，这也是其加固自身生态护城河的关键步骤。
+              </p>
+            </div>
+            <div class="row-padding">
+              <div class="col l6 s12 margin-bottom">
+                <img
+                  src="./images/826.jpg"
+                  width="300"
+                  height="200"
+                  class="img"
+                  alt=""
+                />
+              </div>
+              <div class="col l6 s12 margin-bottom">
+                <img
+                  src="./images/791.jpg"
+                  width="300"
+                  height="200"
+                  class="img"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="container">
+              <button class="button red">
+                <i class="fa fa-thumbs-up margin-right-8"></i>喜欢
+              </button>
+              <button class="button ">
+                <i class="fa fa-comment margin-right-8"></i>留言
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col l2 s12">
+          <div
+            class="shadow container center padding-tb margin-bottom-24 round"
+          >
+            <p>要开始活动：</p>
+            <img
+              src="./images/right1.jpg"
+              width="300"
+              height="200"
+              class="img"
+              alt="img"
+            />
+            <h4>假日狂欢</h4>
+            <p>星期五 15:00</p>
+            <button
+              class="button lightgrey hover-shadow-off hover-lightgray"
+              style="width:100%"
+            >
+              详 情
+            </button>
+          </div>
+          <div
+            class="shadow container center padding-tb margin-bottom-24 round"
+          >
+            <p>好友请求</p>
+            <img src="./images/right2.jpg" width="80" height="80" alt="img" />
+            <p class="small wide-small">花无缺</p>
+            <div class="row">
+              <button
+                class="button left lightgreen hover-shadow-off hover-lightgrey"
+                style="width:50%"
+              >
+                Yes
+              </button>
+              <button
+                class="button left lightred hover-shadow-off hover-lightgrey"
+                style="width:50%"
+              >
+                No
+              </button>
+            </div>
+          </div>
+          <div
+            class="shadow container center padding-tb margin-bottom-24 round"
+          >
+            <p>好友请求</p>
+            <img src="./images/right2.jpg" width="80" height="80" alt="img" />
+            <p class="small wide-small">丁宁</p>
+            <div class="row">
+              <button
+                class="button left lightgreen hover-shadow-off hover-lightgrey"
+                style="width:50%"
+              >
+                Yes
+              </button>
+              <button
+                class="button left lightred hover-shadow-off hover-lightgrey"
+                style="width:50%"
+              >
+                No
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ▲———————————————— footer ————————————————▲ -->
+    <footer class="black margin-top padding-tb center">
+      <p>
+        Power by
+        <a class="text-lightgray" href="http://www.rmzfle.com">Yixue</a>
+      </p>
+    </footer>
+    <script src="./js/base.js"></script>
+  </body>
+</html>

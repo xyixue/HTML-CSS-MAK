@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>z-index定义元素的堆放层次</title>
+    <style>
+    img{
+      position: absolute;
+      top:10px;
+      left: 10px;
+      /* 负数 在最下面 只有处理指定位置 absolute  relative fixed*/
+      
+      /* z-index: -1; */
+    }
+    h1, p {
+      position: relative;
+      z-index: 1;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <h1>z-index定义元素的堆放层次</h1>
+    <h1>图片</h1>
+    <img src="https://picsum.photos/seed/picsum/600/300" alt="" />
+    <p>壁纸</p>
+  </body>
+</html>

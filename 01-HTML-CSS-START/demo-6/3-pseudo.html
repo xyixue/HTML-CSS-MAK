@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>伪类选择器 表示某种状态</title>
+  <style>
+    div{
+      border: 1px solid lawngreen;
+    }
+  /* div p:hover{
+    background-color: chocolate;
+  } */
+  /* div p{
+    display: none;
+    background-color: cornsilk;
+    padding: 20px;
+  }
+  div:hover p{
+    display: block;
+  } */
+  .child p:first-child{
+    background-color: lightcoral;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <p>hello, 伪类选择器</p>
+  </div>
+
+  <div class="child">
+    <p>段落内容</p>
+    <p>段落内容</p>
+    <p>段落内容</p>
+    <p>段落内容</p>
+  </div>
+</body>
+</html>

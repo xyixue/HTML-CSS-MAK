@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>自动切换</title>
+    <style>
+      .container1 {
+        position: relative;
+        max-width: 600px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>自动切换</h1>
+    <div class="container1">
+      <img
+        src="./images/s1.jpg"
+        class="s1"
+        width="900"
+        height="450"
+        alt="slider1"
+      />
+      <img
+        src="./images/s2.jpg"
+        style="display: none;"
+        width="900"
+        height="450"
+        alt="slider2"
+        class="s1"
+      />
+      <img
+        src="./images/s3.jpg"
+        style="display: none;"
+        width="900"
+        height="450"
+        alt="slider3"
+        class="s1"
+      />
+    </div>
+
+    <script>
+      var index = 1;
+      auto();
+      function auto() {
+        var sliders = document.getElementsByClassName("s1");
+
+        for (var i = 0; i < sliders.length; i++) {
+          sliders[i].style.display = "none";
+        }
+
+        if (index > sliders.length) {
+          index = 1;
+        }
+        sliders[index - 1].style.display = "";
+        index++;
+        setTimeout(auto, 2000);
+      }
+    </script>
+  </body>
+</html>

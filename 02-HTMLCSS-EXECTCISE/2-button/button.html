@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>button</title>
+    <style>
+      .button {
+        display: inline-block;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        padding: 14px 16px;
+        font-size: 15px;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .radius {
+        border-radius: 5px;
+      }
+      .shadow {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3),
+          0 4px 10px 0 rgba(0, 0, 0, 0.4);
+      }
+      .border {
+        border: 2px solid #333;
+        background-color: transparent;
+        color: #333;
+      }
+      .hoverable{
+        transition: all 0.4s;
+      }
+      .hoverable:hover {
+        background-color: #333;
+        color: #fff;
+      }
+      .group .item{
+        float: left;
+        border-right: 1px solid #666;
+      }
+      .group .item:last-child{
+        border-right: none
+      }
+      .group .item:hover{
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">button</button>
+    <button class="button radius">button</button>
+    <button class="button shadow">button</button>
+    <button class="button">button</button>
+    <button class="button border">border</button>
+    <button class="button border hoverable">border</button>
+
+    <h1>按钮 组</h1>
+    <div class="group">
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+      <button class="button item">button</button>
+    </div>
+  </body>
+</html>

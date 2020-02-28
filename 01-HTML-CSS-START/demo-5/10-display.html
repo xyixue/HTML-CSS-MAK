@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>display控制元素的显示状态</title>
+    <style>
+      p{
+        /* display:none; */
+        /* display: block; 块元素 */
+        /* 行内块元素 可以设置元素的 宽高 */
+        display:inline-block;  /* 可以设置 width height padding margin */
+        /* display: inline; 行内元素 */
+      }
+      .visibility{
+        background-color: lightcyan;
+        height: 200px;
+        width: 200px;
+        /* 保留宽高 隐藏元素 */
+        visibility: hidden;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>display控制元素的显示状态</h1>
+    <div class="visibility">
+      Lorem ipsum dolor sit amet consectetur adipisicing.
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex in autem
+      reprehenderit. Laudantium porro doloribus iste reprehenderit aliquam
+      recusandae minus.
+    </p>
+  </body>
+</html>

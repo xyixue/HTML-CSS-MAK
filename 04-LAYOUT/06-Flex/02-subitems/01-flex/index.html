@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>子项目flex属性</title>
+  <style>
+  section{
+    width: 80%;
+    height: 150px;
+    background-color: teal;
+    margin: 0 auto;
+    display: flex;
+  }
+  section div:nth-child(1){
+    width: 100px;
+    height:150px;
+    background-color: violet;
+  }
+  section div:nth-child(3){
+    width: 100px;
+    height:150px;
+    background-color: sandybrown;
+  }
+  section div:nth-child(2){
+    /* flex:1;  //子项目 flex属性分配剩余空间  占多少份数 */
+    flex:1;
+    background-color: springgreen;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </div>
+</body>
+</html>

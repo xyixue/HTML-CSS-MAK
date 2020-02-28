@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>边框</title>
+  <style>
+  p{
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: slategray;
+     圆角 
+    border-radius: 20px; */
+    border:2px solid blue;
+    border-radius: 20px;
+  }
+  div{
+    background-color: #eee;
+    border-left: 5px solid orchid;
+  }
+  .color{
+    margin: 100px;
+    width: 400px;
+    height: 200px;
+    /* 这个不行 */
+    border-style: solid;
+    border-color:darkmagenta sienna sandybrown darkgreen;
+  }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore.</p>
+  <div>
+    Lorem ipsum dolor sit amet.
+  </div>
+
+  <div class="color">
+    Lorem, ipsum dolor.
+  </div>
+</body>
+</html>

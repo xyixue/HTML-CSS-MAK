@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>阴影</title>
+    <style>
+      
+      .container {
+        width: 200px;
+        height: 200px;
+        background-color: cornflowerblue;
+        margin: 50px auto;
+      }
+      .shadow-2 {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16),
+          0 2px 10px rgba(0, 0, 0, 0.12);
+      }
+      .shadow-4 {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16),
+          0 2px 10px rgba(0, 0, 0, 0.19);
+      }
+      .text-shadow {
+        color: coral;
+        text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.9);
+      }
+      .kongxinzi {
+        color: royalblue;
+        text-shadow: -1px 0 #000, 1px 0 #000, 0 -1px #000, 0 1px #000;
+      }
+      .hover-shadow:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16),
+          0 2px 10px rgba(0, 0, 0, 0.19);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-shadow">Lorem ipsum dolor sit.</h1>
+    <h1 class="kongxinzi">Lorem, ipsum dolor.</h1>
+    <div class="container hover-shadow"></div>
+    <div class="container shadow-2"></div>
+    <div class="container shadow-4"></div>
+    <img class="shadow-4" src="./m2.jpg" alt="" />
+  </body>
+</html>

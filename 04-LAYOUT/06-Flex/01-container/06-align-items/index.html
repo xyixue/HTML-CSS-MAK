@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>align-items</title>
+  <style>
+  div{
+    display: flex;
+    background-color: blueviolet;
+    width: 600px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items设置侧轴上的项目排列方式
+    flex-start 从上到下
+    flex-end 从下到上
+    center 居中 垂直居中
+    stretch 拉伸 */
+    align-items: center;
+    /* align-items: stretch;  子元素取消设置高度 */
+  }
+  div span{
+    width: 150px;
+    height: 150px;
+    background-color: burlywood;
+    color: white;
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>  
+  </div>
+</body>
+</html>
